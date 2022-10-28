@@ -1,0 +1,113 @@
+
+<html >
+  <head>
+    
+    <title>admissions</title>
+    <style>
+            body{
+                background-image: url("https://images.squarespace-cdn.com/content/v1/57713a8e2994cae381dd86fe/1543925384526-GNBBO11VDMAKDWGOTDEJ/1-5.jpg?format=2500w");
+                backgroun-repeat: no-repeat;
+            }
+    body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+
+    font-size: 16px;
+    background-color: grey;
+     }
+
+    img{
+       width:100px;
+       height:100px;
+       margin-top: 20px;
+       margin-left:45%; 
+       justify-content: center;
+     }
+    p{
+    margin-bottom: 2em;
+  }
+    .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+    }
+     .rec{
+    width: 10px;
+    margin: 0 0.5em 0 0;    /* top,right,left,bottom */
+    vertical-align: middle;
+    }   
+    h1,p{
+    margin: 1em auto;
+    text-align: center;
+    }
+    fieldset{
+    border: none;
+    padding: 1em 0;
+    border-top: 3px solid #3b3b4f;
+    }
+    form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+   }
+    label{
+    display: block;
+    margin: 1em 0;
+   }
+   input , select{
+    margin: 5px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+   }
+    input {
+    border: 1px solid #0a0a23;
+   }
+    input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin: 2em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    border-color: white;
+    min-width: 300px;
+  }
+    </style>
+  </head>
+  <body>
+    <img src="https://images.squarespace-cdn.com/content/v1/57713a8e2994cae381dd86fe/1510405002757-FP2W9HV8ZA0HP2IF3O6A/SOA-PNG.png">
+    <h1 id="title">Admission</h1>
+    
+    <form id="survey-form">
+       <fieldset>
+          <label id="name-label">Name<input type="text" placeholder="Enter your name" id="name" ></label>
+          <label id="email-label">Email <input type="email" placeholder="Enter your email" id="email" ></label>
+          <label id="number-label">Mobile <input type="tel" placeholder="Enter MobileNo." id="number" ></label>
+          <label id="password-label">Password <input type="password" placeholder="Enter Password" pattern=""></label> 
+        </fieldset>
+        <fieldset>
+        <label>City
+            <select  id="dropdown">
+              <option value="" disabled selected hidden>Select City</option>
+              <option>Bhubaneswar</option>
+              <option>Cuttack</option>
+              <option>Puri</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+                 <label for="">Gender</label><br>
+                <label for="m"><input type="radio"  id="m" name="gender"  class="rec" /> Male</label><br>
+                <label for="f"><input type="radio"  id="f" name="gender"   class="rec"/> Female </label><br>
+                <label for="o"><input type="radio"  id="o" name="gender"  class="rec"/> Other </label><br>
+        </fieldset> 
+       <fieldset>
+             <label id="rank-label">JEE rank<input type="textarea" placeholder="Enter your JEE rank" id="rank" ></label>
+             <label id="marks-label">12th Percentage<input type="percentage" placeholder="Enter your 12th percentage" id="marks" ></label>
+       </fieldset>
+        <input type="submit" id="submit"/>
+    </form>
+  </body>
+</html>
